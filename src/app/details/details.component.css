@@ -1,0 +1,29 @@
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+}
+th {
+    font-weight: bold;
+    text-align: left;
+    vertical-align:text-top;
+    padding-right: 5px;
+}
+.employeelink {
+    color: #015CDA;
+}
+.employeelink:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+#backbuttoncontainer {
+    margin: 12px 0px 0px 3px;
+}
+#backbutton {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color: #015CDA;
+    text-decoration: none;
+}
+#backbutton:hover {
+    text-decoration: underline;
+}

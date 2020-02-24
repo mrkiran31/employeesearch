@@ -1,0 +1,5 @@
+{
+    "employeeSearchAPI": {
+        "uri": "http://empfinder.azurewebsites.net/"
+    }
+}

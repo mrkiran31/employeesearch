@@ -1,0 +1,40 @@
+<table *ngIf='employee'>
+  <tr>
+    <th>Name</th>
+    <td>{{employee.FullName}}</td>
+  </tr>
+  <tr>
+    <th>Emp ID</th>
+    <td>{{employee.EmployeeID}}</td>
+  </tr>
+  <tr>
+    <th>Email</th>
+    <td>{{employee.Email}}</td>
+  </tr>
+  <tr>
+    <th>Telephone</th>
+    <td>{{employee.Telephone}}</td>
+  </tr>
+  <tr>
+    <th>Band</th>
+    <td>{{employee.Band}}</td>
+  </tr>
+  <tr>
+    <th>Manager</th>
+    <td>
+      <a *ngIf='employee.Boss' (click)='onSelectEmployee(employee.Boss.ID)'
+        class='employeelink'>{{employee.Boss.FullName}}</a>
+    </td>
+  </tr>
+  <tr>
+    <th>Reports</th>
+    <td>
+      <div *ngFor='let report of employee.Reports'>
+        <a (click)='onSelectEmployee(report.ID)' class='employeelink'>{{report.FullName}}</a></div>
+    </td>
+  </tr>
+</table>
+
+<div id='backbuttoncontainer'>
+  <a [routerLink]="['/home']" id='backbutton'>Back</a>
+</div>
